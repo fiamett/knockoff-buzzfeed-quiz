@@ -1,0 +1,25 @@
+body header{
+    background-color: blueviolet;
+    color:aqua;
+    text-align: center;
+}
+#card {
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    justify-content:space-around;
+    align-content: center;
+    border-radius: 30px;
+    width: 40%;
+    height: 400px;
+    text-align: center;
+    background-color: brown;
+    color:aqua;
+    font-size: xx-large;
+}
+#card button{
+    background-color: darkred;
+    color: inherit;
+    border:0px;
+    font-size: inherit;
+}
