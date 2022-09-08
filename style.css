@@ -15,11 +15,18 @@ body header{
     text-align: center;
     background-color: brown;
     color:aqua;
-    font-size: xx-large;
+    font-size: x-large;
+    line-height: 120%;
 }
 #card button{
     background-color: darkred;
     color: inherit;
     border:0px;
     font-size: inherit;
+}
+#card ol{
+    font-size: xx-large;
+}
+#card ol li:hover{
+    color: blue;
 }
