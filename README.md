@@ -10,13 +10,9 @@
  i also had a challange to make as much of this as i can in javascript and css
 
 ## Usage
-    to play just press the play button read the instructions and press play again press all of the potatoes you can find good luck its pretty hard to do quickly
-    there is a timer in the top right of the screen
-
-
-    md
-    ![alt text](./chall4.PNG))
+ to play just press the play button read the instructions and press play again press all of the potatoes you can find good luck its pretty hard to do quickly
+ there is a timer in the top right of the screen
     
-    md![starting screen](./chall4.PNG)
+ ![starting screen](./chall4.PNG)
     
-    ![in game](./challange4.PNG)
+ ![in game](./challange4.PNG)
