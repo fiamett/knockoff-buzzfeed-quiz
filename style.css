@@ -6,6 +6,15 @@ body header{
 li {
     list-style-type: none;
 }
+#timer {
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    color: yellow;
+    -webkit-text-stroke: 2px orange;
+}
 #card {
     display: flex;
     flex-direction: column;

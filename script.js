@@ -11,7 +11,7 @@ var ans = document.createElement("li");
 
 var points = 0;
 var time = 40;
-var questions = ["1","2","3","4","5"]
+var questions = ["Potato","pOtato","poTato","potAto","potaTo"]
 var answers = ["Potato","pOtato","poTato","potAto","potaTo"];
 var fluff = ["Tomato","tOmato","toMato","tomAto","tomaTo","tomatO","TTomato","tOOmato","toMMato","tomAAto","tomaTTo","tomatOO","TTTomato","tOOOmato","toMMMato"]
 var order = [1,2,3,4]
@@ -74,9 +74,17 @@ function quizstart(){
 function timed(){
     button.removeEventListener("click",timed)
     quest();
-    console.log("test")
-    setTimeout(results,2000);
+    setTimeout(results,10000);
     //sets the timer to 40 seconds and runs the results function when time runs out and transitions to the quest functionwhen the timer starts
+    var time = 10;
+        timer.textContent = time
+    var tim = setInterval(function(){
+        time -= 1;
+        timer.textContent = time
+        if(time <= 0){clearInterval(tim)}}
+        ,1000)
+    // creates the timer, resets timer and sts the textcontent before the set interval due to there being a second delay before 1st call
+    
 };
 // the timer function has been removed form the actual quiz function because of the way i had the quiz func replays every question and theat ended up creating multiple timers
 
@@ -137,6 +145,7 @@ function quest(event){
 function results(){
     card.innerHTML = "";
     uli.innerHTML = "";
+    timer.textContent = "";
     button.removeEventListener("click",timed);
     // clear out the element and clears out the button element
 
