@@ -60,7 +60,7 @@ function quizstart(){
     points = 0;
     //clears old assignments
 
-    texts.textContent = "press the potato if you get it wrong you lose a point if you get it right you get a a point the timer is set to 10 seconds"
+    texts.textContent = "press the potato if you get it wrong you lose a point if you get it right you get a a point the timer is on the top right and set to 10 seconds"
     button.textContent = "Start for real this time"
     card.appendChild(texts);
     card.appendChild(button);
@@ -81,9 +81,11 @@ function timed(){
     var tim = setInterval(function(){
         time -= 1;
         timer.textContent = time
-        if(time <= 0){clearInterval(tim)}}
+        if(time <= 0){
+            timer.textContent = "";
+            clearInterval(tim)}}
         ,1000)
-    // creates the timer, resets timer and sts the textcontent before the set interval due to there being a second delay before 1st call
+    // creates the timer, resets timer and sets the textcontent before the set interval due to there being a second delay before 1st callalso clears the timer
     
 };
 // the timer function has been removed form the actual quiz function because of the way i had the quiz func replays every question and theat ended up creating multiple timers
@@ -145,7 +147,6 @@ function quest(event){
 function results(){
     card.innerHTML = "";
     uli.innerHTML = "";
-    timer.textContent = "";
     button.removeEventListener("click",timed);
     // clear out the element and clears out the button element
 
@@ -168,7 +169,7 @@ function results(){
     };
     //adds the high scores to the list 
 
-    while (highscore.length > 4){
+    while (highscore.length > 5){
         highscore.pop()
     };
     //if the highscore array gets longer than 5(to have a buffer)culls it down to 5 numbers

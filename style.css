@@ -5,6 +5,7 @@ body header{
 }
 li {
     list-style-type: none;
+    user-select: none;
 }
 #timer {
     position: fixed;
